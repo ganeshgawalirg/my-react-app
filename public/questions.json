@@ -1,0 +1,485 @@
+[
+  {
+    "id": "q_1",
+    "question": "What is the difference between JDK, JRE, and JVM?",
+    "answer": "JVM (Java Virtual Machine) is an abstract machine that provides a runtime environment. JRE (Java Runtime Environment) is a set of software tools for developing Java applications. JDK (Java Development Kit) is a software development kit required to develop applications in Java.",
+    "explanation": "The JVM is the core component that executes Java bytecode. The JRE includes the JVM and libraries. The JDK includes the JRE and development tools like a compiler and debugger.",
+    "category": "Java"
+  },
+  {
+    "id": "q_2",
+    "question": "What are the main principles of Object-Oriented Programming (OOP)?",
+    "answer": "The four main principles of OOP are Encapsulation, Inheritance, Polymorphism, and Abstraction.",
+    "explanation": "<b>Encapsulation:</b> Bundling data and methods that operate on the data. <b>Inheritance:</b> Mechanism where a new class inherits properties and behavior from an existing class. <b>Polymorphism:</b> Ability of a variable, function, or object to take on multiple forms. <b>Abstraction:</b> Hiding complex implementation details and showing only essential features.",
+    "category": "Java"
+  },
+  {
+    "id": "q_3",
+    "question": "What is the difference between `==` and `.equals()` in Java?",
+    "answer": "The `==` operator checks if two references point to the same object in memory. The `.equals()` method, by default, does the same, but it's often overridden (e.g., in the String class) to compare the actual content or values of the objects.",
+    "explanation": "For primitive types, `==` compares values. For objects, `==` compares memory addresses. `.equals()` should be used for logical equality.",
+    "category": "Java"
+  },
+  {
+    "id": "q_4",
+    "question": "What is Spring Boot?",
+    "answer": "Spring Boot is an open-source, microservice-based Java web framework. It provides an easier and faster way to set up, configure, and run both simple and web-based applications.",
+    "explanation": "It simplifies the development of Spring applications by providing defaults for code and annotation configuration to get started quickly. It has embedded servers like Tomcat, Jetty, or Undertow.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_5",
+    "question": "What is dependency injection?",
+    "answer": "Dependency Injection (DI) is a design pattern in which an object or function receives other objects or functions that it depends on. It's a core principle of the Spring framework.",
+    "explanation": "Instead of the component creating its dependencies, the Inversion of Control (IoC) container injects them. This decouples the components and makes testing easier.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_6",
+    "question": "What are microservices?",
+    "answer": "Microservices is an architectural style that structures an application as a collection of loosely coupled, independently deployable services.",
+    "explanation": "Each service is self-contained, has its own codebase, and typically communicates with other services through APIs. This allows for better scalability, flexibility, and easier maintenance compared to monolithic architectures.",
+    "category": "Microservices"
+  },
+  {
+    "id": "q_7",
+    "question": "What is Docker?",
+    "answer": "Docker is a platform for developing, shipping, and running applications in containers. Containers are lightweight, standalone, executable packages of software that include everything needed to run an application.",
+    "explanation": "Docker uses OS-level virtualization to deliver software in packages called containers. This ensures that the application works seamlessly in any environment.",
+    "category": "Docker"
+  },
+  {
+    "id": "q_8",
+    "question": "What is Redis?",
+    "answer": "Redis (Remote Dictionary Server) is an in-memory data structure store, used as a database, cache, and message broker.",
+    "explanation": "It supports various data structures such as strings, hashes, lists, sets, and more. Its in-memory nature makes it extremely fast, which is why it's popular for caching.",
+    "category": "Redis"
+  },
+  {
+    "id": "q_9",
+    "question": "What is multitenancy?",
+    "answer": "Multitenancy is an architecture in which a single instance of a software application serves multiple customers (tenants).",
+    "explanation": "Each tenant's data is isolated and remains invisible to other tenants. This is a common pattern in SaaS applications to achieve cost savings and efficiency.",
+    "category": "Multitenancy"
+  },
+  {
+    "id": "q_251",
+    "question": "What is the difference between CopyOnWriteArrayList and ArrayList?",
+    "answer": "CopyOnWriteArrayList is thread-safe and creates a fresh copy on write operations; ArrayList is not thread-safe.",
+    "explanation": "CopyOnWriteArrayList is useful for cases where reads are frequent and writes are rare, ensuring thread safety without external synchronization.",
+    "category": "Java"
+  },
+  {
+    "id": "q_252",
+    "question": "How does Spring Boot support microservice communication?",
+    "answer": "Through REST, messaging systems (RabbitMQ, Kafka), and Feign clients.",
+    "explanation": "Spring Boot integrates easily with popular communication patterns and tools for distributed systems.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_253",
+    "question": "What is the purpose of @RestControllerAdvice?",
+    "answer": "A specialization of @ControllerAdvice that automatically applies @ResponseBody.",
+    "explanation": "Simplifies global exception handling for REST APIs.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_254",
+    "question": "How do weak references help in cache implementations?",
+    "answer": "They allow cached objects to be garbage collected when memory is needed.",
+    "explanation": "Prevents memory leaks by not holding strong references unnecessarily.",
+    "category": "Java"
+  },
+  {
+    "id": "q_255",
+    "question": "What is the difference between filter and forEach in streams?",
+    "answer": "filter produces a new stream with elements matching a predicate; forEach consumes the stream.",
+    "explanation": "filter is intermediate; forEach is terminal.",
+    "category": "Java"
+  },
+  {
+    "id": "q_256",
+    "question": "How can you configure multiple data sources in Spring Boot?",
+    "answer": "By defining multiple DataSource beans and using @Primary or @Qualifier annotations.",
+    "explanation": "Allows connection to different databases in the same app.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_257",
+    "question": "What is a daemon thread in Java?",
+    "answer": "A background thread that does not prevent JVM shutdown.",
+    "explanation": "Used for housekeeping tasks like GC.",
+    "category": "Java"
+  },
+  {
+    "id": "q_258",
+    "question": "How does thenCompose differ from thenApply in CompletableFuture?",
+    "answer": "thenCompose flattens nested futures; thenApply maps result.",
+    "explanation": "thenCompose is used for chaining async tasks.",
+    "category": "Java"
+  },
+  {
+    "id": "q_259",
+    "question": "What is the role of @EnableScheduling in Spring Boot?",
+    "answer": "Enables scheduled task execution.",
+    "explanation": "Works with @Scheduled to run periodic tasks.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_260",
+    "question": "Explain how @JsonIgnore works in Spring Boot.",
+    "answer": "Prevents a field from being serialized/deserialized.",
+    "explanation": "Useful for hiding sensitive data in APIs.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_261",
+    "question": "What is difference between ConcurrentHashMap and SynchronizedMap?",
+    "answer": "ConcurrentHashMap allows better concurrency with finer-grained locks; SynchronizedMap locks entire map.",
+    "explanation": "ConcurrentHashMap provides higher throughput.",
+    "category": "Java"
+  },
+  {
+    "id": "q_262",
+    "question": "What is the use of @Bean annotation?",
+    "answer": "Declares a bean within a configuration class.",
+    "explanation": "Spring manages its lifecycle and dependencies.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_263",
+    "question": "How does Spring Boot handle profiles in application.yml?",
+    "answer": "Uses --- to separate profile sections.",
+    "explanation": "Enables environment-specific configs in one file.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_264",
+    "question": "What is the difference between eager and lazy initialization in Spring?",
+    "answer": "Eager beans are created at startup; lazy beans are created on first use.",
+    "explanation": "Lazy reduces startup time.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_265",
+    "question": "What is Optional.orElseGet?",
+    "answer": "Returns value or result of supplier if empty.",
+    "explanation": "Delays computation until needed.",
+    "category": "Java"
+  },
+  {
+    "id": "q_266",
+    "question": "How does Stream.reduce work?",
+    "answer": "Combines elements using an accumulator.",
+    "explanation": "Useful for sum, concat, etc.",
+    "category": "Java"
+  },
+  {
+    "id": "q_267",
+    "question": "How does Spring Boot's HealthIndicator work?",
+    "answer": "Provides health check endpoints.",
+    "explanation": "Used by Actuator for monitoring.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_268",
+    "question": "What is @Data in Lombok?",
+    "answer": "Generates getters, setters, equals, hashCode, toString.",
+    "explanation": "Reduces boilerplate.",
+    "category": "Java"
+  },
+  {
+    "id": "q_269",
+    "question": "What is difference between map and collect in streams?",
+    "answer": "map transforms elements; collect gathers final results.",
+    "explanation": "map is intermediate; collect is terminal.",
+    "category": "Java"
+  },
+  {
+    "id": "q_270",
+    "question": "What is circuit breaker pattern?",
+    "answer": "Prevents system overload by failing fast.",
+    "explanation": "Improves system resilience.",
+    "category": "Microservices"
+  },
+  {
+    "id": "q_271",
+    "question": "How to inject list of beans in Spring?",
+    "answer": "Use List<Interface> in constructor or field.",
+    "explanation": "Spring auto-wires all matching beans.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_272",
+    "question": "What is purpose of @Slf4j?",
+    "answer": "Provides logger instance.",
+    "explanation": "Simplifies logging with Lombok.",
+    "category": "Java"
+  },
+  {
+    "id": "q_273",
+    "question": "What is use of @Order?",
+    "answer": "Specifies order of execution.",
+    "explanation": "Applies to filters, aspects, etc.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_274",
+    "question": "What is AtomicInteger?",
+    "answer": "Integer with atomic operations.",
+    "explanation": "Useful in concurrency.",
+    "category": "Java"
+  },
+  {
+    "id": "q_275",
+    "question": "What's difference between peek and forEach?",
+    "answer": "peek is for debugging; forEach consumes.",
+    "explanation": "peek is intermediate op.",
+    "category": "Java"
+  },
+  {
+    "id": "q_276",
+    "question": "How does Spring Boot autowire by type?",
+    "answer": "Matches by class or interface.",
+    "explanation": "Uses type info for injection.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_277",
+    "question": "What is ForkJoinTask?",
+    "answer": "A task for ForkJoinPool.",
+    "explanation": "Supports parallel recursion.",
+    "category": "Java"
+  },
+  {
+    "id": "q_278",
+    "question": "How does Spring Boot logback config work?",
+    "answer": "Uses logback-spring.xml.",
+    "explanation": "Supports Spring placeholders.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_279",
+    "question": "What is @ConditionalOnProperty?",
+    "answer": "Enables bean based on property.",
+    "explanation": "Supports conditional config.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_280",
+    "question": "What is Stream.sorted?",
+    "answer": "Sorts stream elements.",
+    "explanation": "Returns sorted stream.",
+    "category": "Java"
+  },
+  {
+    "id": "q_281",
+    "question": "What is the difference between HashSet and LinkedHashSet?",
+    "answer": "LinkedHashSet maintains insertion order; HashSet does not.",
+    "explanation": "LinkedHashSet uses a linked list internally to preserve order while providing O(1) performance for basic operations.",
+    "category": "Java"
+  },
+  {
+    "id": "q_282",
+    "question": "What is the role of @RequestMapping in Spring MVC?",
+    "answer": "Maps HTTP requests to handler methods.",
+    "explanation": "Provides flexibility for defining URL patterns and supported HTTP methods.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_283",
+    "question": "How does volatile keyword ensure visibility?",
+    "answer": "Ensures changes to a variable are visible across threads.",
+    "explanation": "Prevents threads from caching variable values.",
+    "category": "Java"
+  },
+  {
+    "id": "q_284",
+    "question": "What is purpose of @SpringBootTest?",
+    "answer": "Loads full application context for integration tests.",
+    "explanation": "Useful for end-to-end testing of Spring Boot apps.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_285",
+    "question": "What is @Entity annotation?",
+    "answer": "Marks a class as a JPA entity.",
+    "explanation": "Maps the class to a database table.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_286",
+    "question": "What is difference between readOnly = true and default in @Transactional?",
+    "answer": "readOnly = true optimizes for read operations.",
+    "explanation": "May skip dirty checks or other unnecessary work.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_287",
+    "question": "How does @Component differ from @Service?",
+    "answer": "Both are components; @Service indicates service layer intent.",
+    "explanation": "Helps with readability and tooling.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_288",
+    "question": "What is the default scope of Spring beans?",
+    "answer": "Singleton.",
+    "explanation": "Only one instance per Spring container.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_289",
+    "question": "How does Optional.filter work?",
+    "answer": "Returns same Optional if predicate matches; else empty.",
+    "explanation": "Useful for chaining conditions.",
+    "category": "Java"
+  },
+  {
+    "id": "q_290",
+    "question": "What is purpose of @PathVariable?",
+    "answer": "Binds URL template variables to method parameters.",
+    "explanation": "Enables dynamic URLs.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_291",
+    "question": "How to prevent circular dependency in constructor injection?",
+    "answer": "Refactor design or use setter injection.",
+    "explanation": "Circular constructor injection fails at startup.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_292",
+    "question": "What is ThreadLocal?",
+    "answer": "Provides thread-confined variables.",
+    "explanation": "Each thread has its own copy.",
+    "category": "Java"
+  },
+  {
+    "id": "q_293",
+    "question": "What is difference between Mono and Flux?",
+    "answer": "Mono represents 0 or 1 item; Flux represents 0 to N.",
+    "explanation": "Both are reactive types in Project Reactor.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_294",
+    "question": "What is @GetMapping?",
+    "answer": "Shortcut for @RequestMapping(method = GET).",
+    "explanation": "Improves readability.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_295",
+    "question": "How to define custom scope in Spring?",
+    "answer": "Implement Scope interface and register it.",
+    "explanation": "Allows advanced bean lifecycle control.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_296",
+    "question": "What is @EnableConfigurationProperties?",
+    "answer": "Enables support for @ConfigurationProperties beans.",
+    "explanation": "Required when binding external config.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_297",
+    "question": "What is difference between Callable and Runnable?",
+    "answer": "Callable returns a result and can throw checked exceptions; Runnable does not.",
+    "explanation": "Callable better for tasks needing a result.",
+    "category": "Java"
+  },
+  {
+    "id": "q_298",
+    "question": "What is @Transactional(propagation = Propagation.REQUIRES_NEW)?",
+    "answer": "Starts new transaction, suspends existing.",
+    "explanation": "Useful for independent transactions.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_299",
+    "question": "What is purpose of @Autowired on constructor?",
+    "answer": "Instructs Spring to inject dependencies.",
+    "explanation": "Recommended for mandatory dependencies.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_300",
+    "question": "What is difference between ConcurrentLinkedQueue and LinkedList?",
+    "answer": "ConcurrentLinkedQueue is thread-safe; LinkedList is not.",
+    "explanation": "ConcurrentLinkedQueue uses non-blocking algorithms.",
+    "category": "Java"
+  },
+  {
+    "id": "q_301",
+    "question": "What is purpose of @CrossOrigin?",
+    "answer": "Enables CORS support for controller.",
+    "explanation": "Allows cross-domain requests.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_302",
+    "question": "How does Stream.distinct work?",
+    "answer": "Removes duplicates using equals.",
+    "explanation": "Keeps first occurrence.",
+    "category": "Java"
+  },
+  {
+    "id": "q_303",
+    "question": "What is @EnableWebSecurity?",
+    "answer": "Enables Spring Security configuration.",
+    "explanation": "Allows custom security rules.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_304",
+    "question": "How to create immutable collection?",
+    "answer": "Use Collections.unmodifiableList or List.of.",
+    "explanation": "Prevents modification at runtime.",
+    "category": "Java"
+  },
+  {
+    "id": "q_305",
+    "question": "What is ReentrantLock?",
+    "answer": "Lock that can be re-acquired by the same thread.",
+    "explanation": "Supports fairness and tryLock.",
+    "category": "Java"
+  },
+  {
+    "id": "q_306",
+    "question": "What is Stream.limit?",
+    "answer": "Limits stream to specified size.",
+    "explanation": "Useful for pagination.",
+    "category": "Java"
+  },
+  {
+    "id": "q_307",
+    "question": "What is @Primary?",
+    "answer": "Marks bean as default when multiple candidates exist.",
+    "explanation": "Avoids need for @Qualifier.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_308",
+    "question": "What is difference between SoftReference and WeakReference?",
+    "answer": "SoftReference cleared when memory low; WeakReference cleared eagerly.",
+    "explanation": "SoftReference good for caches.",
+    "category": "Java"
+  },
+  {
+    "id": "q_309",
+    "question": "What is difference between @ControllerAdvice and @RestControllerAdvice?",
+    "answer": "RestControllerAdvice applies @ResponseBody by default.",
+    "explanation": "Simplifies REST exception handling.",
+    "category": "Spring Boot"
+  },
+  {
+    "id": "q_310",
+    "question": "What is Stream.collect?",
+    "answer": "Terminal op that gathers elements.",
+    "explanation": "Converts to List, Map, etc.",
+    "category": "Java"
+  }
+] 

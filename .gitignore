@@ -1,1 +1,11 @@
 node_modules\ndist
+
+# Lockfiles
+# ... existing code ...
+
+# Environment
+.env
+.env*.local
+
+# IDEs and editors
+# ... existing code ...
